@@ -71,11 +71,17 @@ extern "C" {
 
 #define POWER_STARTUP_DELAY                                                (16)
 
+
+
+#define CPUCLK_FREQ                                                     80000000
+
+
 /* clang-format on */
 
 void SYSCFG_DL_init(void);
 void SYSCFG_DL_initPower(void);
 void SYSCFG_DL_GPIO_init(void);
+void SYSCFG_DL_SYSCTL_init(void);
 
 
 #ifdef __cplusplus
